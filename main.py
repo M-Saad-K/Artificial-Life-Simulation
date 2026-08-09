@@ -7,6 +7,7 @@ num_particles = 600
 
 window = np.zeros((x, y, 3))
 cv2.namedWindow(window, cv2.WND_PROP_FULLSCREEN)
+cv2.setWindowProperty("window", cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
 
 while True:
     cv2.imshow("window", window)
