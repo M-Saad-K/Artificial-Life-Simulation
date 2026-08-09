@@ -3,6 +3,7 @@ import numpy as np
 
 x = 1080
 y = 1920
+num_particles = 600
 
 window = np.zeros((x, y, 3))
 
