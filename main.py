@@ -2,6 +2,7 @@ import cv2
 import numpy as np
 import math
 import random
+from pynput import keyboard
 
 x = 1080
 y = 1920
@@ -26,3 +27,7 @@ while True:
     
     cv2.imshow("window", window)
     cv2.waitKey(1)
+
+    # If key board ESC pressed, break loop
+    if keyboard.is_pressed("a"):
+        break
