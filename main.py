@@ -21,5 +21,8 @@ while True:
     # Loop through every particle and draw it as a circle on the screen
     for idx in range(num_particles):
         cv2.circle(window, (int(particle_pos_y[idx]), int(particle_pos_x[idx])), 3, (255, 0, 0), -1)
+
+    img = cv2.resize(window, (1920, 1080), interpolation=cv2.INTER_AREA)  
+    
     cv2.imshow("window", window)
     cv2.waitKey(1)
