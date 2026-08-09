@@ -12,7 +12,8 @@ cv2.namedWindow(window, cv2.WND_PROP_FULLSCREEN)
 cv2.setWindowProperty("window", cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
 
 # Random particle ex-y position generated
-particle_pos_x = [random.randint(5, x-5) for _ in range(num_particles)] 
+particle_pos_x = [random.randint(5, x-5) for _ in range(num_particles)]
+particle_pos_y = [random.randint(5, y-5) for _ in range(num_particles)]
 
 while True:
     cv2.imshow("window", window)
